@@ -6,29 +6,29 @@
 
 @layer base {
   :root {
-    /* Fitcci теплая палитра */
-    --warm-cream: #f7f3f0;
-    --soft-beige: #e8ddd4;
-    --golden-sand: #d4b996;
-    --rich-brown: #8b7355;
-    --deep-charcoal: #2c2c2c;
-    --accent-sage: #a8b5a0;
+    /* Fitcci розово-персиковая палитра */
+    --primary-pink: #ef82a2;
+    --soft-peach: #fad5c3;
+    --coral: #f49098;
+    --pure-white: #ffffff;
+    --dark-text: #202020;
+    --light-gray: #f0f0f0;
 
-    --background: 247 243 240;
-    --foreground: 44 44 44;
+    --background: 240 240 240;
+    --foreground: 32 32 32;
     --card: 255 255 255;
-    --card-foreground: 44 44 44;
-    --primary: 139 115 85;
-    --primary-foreground: 247 243 240;
-    --secondary: 212 185 150;
-    --secondary-foreground: 44 44 44;
-    --muted: 232 221 212;
+    --card-foreground: 32 32 32;
+    --primary: 239 130 162;
+    --primary-foreground: 255 255 255;
+    --secondary: 250 213 195;
+    --secondary-foreground: 32 32 32;
+    --muted: 240 240 240;
     --muted-foreground: 107 114 126;
-    --accent: 168 181 160;
-    --accent-foreground: 44 44 44;
-    --border: 232 221 212;
-    --input: 232 221 212;
-    --ring: 139 115 85;
+    --accent: 244 144 152;
+    --accent-foreground: 32 32 32;
+    --border: 250 213 195;
+    --input: 250 213 195;
+    --ring: 239 130 162;
     --radius: 0.75rem;
   }
 }
@@ -39,7 +39,7 @@
   }
 
   body {
-    @apply bg-[#F7F3F0] text-foreground font-['Open_Sans'] antialiased;
+    @apply bg-[#F0F0F0] text-foreground font-['Open_Sans'] antialiased;
   }
 
   h1,
@@ -54,19 +54,19 @@
 
 @layer components {
   .creative-card {
-    @apply bg-white/80 backdrop-blur-sm border border-[#E8DDD4] rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1;
+    @apply bg-white/80 backdrop-blur-sm border border-[#FAD5C3] rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1;
   }
 
   .warm-gradient {
-    @apply bg-gradient-to-br from-[#F7F3F0] via-[#E8DDD4] to-[#D4B996];
+    @apply bg-gradient-to-br from-[#F0F0F0] via-[#FAD5C3] to-[#F49098];
   }
 
   .text-elegant {
-    @apply text-[#2C2C2C] leading-relaxed;
+    @apply text-[#202020] leading-relaxed;
   }
 
   .btn-primary {
-    @apply bg-[#8B7355] hover:bg-[#8B7355]/90 text-[#F7F3F0] font-medium px-6 py-3 rounded-lg transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5;
+    @apply bg-[#EF82A2] hover:bg-[#EF82A2]/90 text-[#FFFFFF] font-medium px-6 py-3 rounded-lg transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5;
   }
 
   .section-spacing {
